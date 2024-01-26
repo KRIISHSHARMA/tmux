@@ -1,4 +1,4 @@
-# tmux
+# tmux [cheatsheet](https://tmuxcheatsheet.com/)
 ## installation
 ``` sh
 sudo apt install tmux
