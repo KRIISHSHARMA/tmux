@@ -7,15 +7,20 @@ sudo apt install tmux
 ``` sh
 tmux
 ```
-- create more windows
-  1. vertically --> crtl + b + %
-  2. horizontally --> crtl + b + "
-- move from one to another --> crtl + b +  q + window number (displayed when you press first 3 keys)
-  - or crtl + b + arrowkey
-- resize a window --> crtl + b + ctrl + arrowkey
-- delete a window --> crtl + b + x + y
-- exit a session --> crtl + b + d
+- create more panel
+  1. vertically --> ctrl + b + %
+  2. horizontally --> ctrl + b + "
+- move from one to another --> ctrl + b +  q + panel number (displayed when you press first 3 keys)
+  - or ctrl + b + arrowkey
+- resize a panel --> ctrl + b + ctrl + arrowkey
+  - preset layout --> ctrl + b + alt + {1-5}any
+- delete a panel --> ctrl + b + x + y
+- create multiple windows in one session --> ctrl + b + c
+- shift between windows in a session -->  ctrl + b + n
+- move anywhere -> ctrl + b + w
+- exit a session --> ctrl + b + d
 - resume session `tmux a` (most recent)
+- Once you have selected the text, press “ctrl + w” to copy it to the Tmux clipboard. Next, press “ctrl + b” followed by “=.”
 - name a session
 ``` sh
 tmux new -s <name>
@@ -28,5 +33,9 @@ tmux a -t <name or index of session(tmux ls)>
 - delete a session
 ``` sh
 tmux kill-session -t <name or index of session(tmux ls)>
+```
+- delete all sessions
+``` sh
+tmux kill-server
 ```
 - 
